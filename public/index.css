@@ -43,12 +43,18 @@ section {
     margin-top: 0;
 }
 .card {
-    width: 175px;
+    width: 190px;
     font-size: 12px;
+    /* flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column;  */
+    display: inline-block;
+    margin-left: 2rem;
 }
 .card--image {
     width: 100%;
     border-radius: 9px;
+    justify-content: baseline;
 }
 
 .card--stats {
