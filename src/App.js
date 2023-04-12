@@ -6,14 +6,10 @@ import Data from './data'
 
 function App(){
     const Cards = Data.map(
-        function(x){
-            return <Card key = {x.id}
-                         image={x.coverImg}
-                         rating={x.stats.rating}
-                         reviewCount={x.stats.reviewCount}
-                         location={x.location}
-                         title={x.title}
-                         price={x.price}
+        function(item){
+            return <Card key = {item.id}
+                         item = {item}
+                        
                     />
         }
     )
